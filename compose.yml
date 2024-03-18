@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  ex-db:
+    image: mariadb:latest
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=exemple
+    ports:
+      - 3321:3306
